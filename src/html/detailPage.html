@@ -7,20 +7,88 @@
     <meta name="description" content="Este es un trabajo de Miriam Abella para la UOC">   
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css" />
+    <script type="text/javascript" src="../app.js"></script>  
+    
   </head>
   <body>
     <header>
-      <h2 class="header__title"><a href="../index.html">MICAR COUNTRY</a></h2>
+      <h2 class="header__title"><a href="../index.html">MICAR COUNTRYVAN</a></h2>
       <nav>
           <ul class="header__nav">
-              <li><a class="header__nav-link header__nav-link-selected" href="aboutUs.html">ABOUT US</a></li>
+              <li><a class="header__nav-link" href="aboutUs.html">ABOUT US</a></li>
               <li><a class="header__nav-link" href="categories.html">CATEGORIES</a></li>
               <li><a class="header__nav-link"  href="links.html">LINKS</a></li>
           </ul>
       </nav>       
   </header>
-  <main>
-    
+  <main class="detail-page">
+
+    <article>
+      <h3> Km recorridos: </h3>
+      <p id="detail-page__km"></p>
+      <h3> Tiempo en carretera: </h3>
+      <p id="detail-page__time-on-road"></p>
+    </article>
+
+    <article>
+      <h1 id="detail-page__city-title"></h1>
+      <div class="detail-page__image" id="detail-page__image"></div>
+      <p id="detail-page__city-description"></p>
+    </article>
+       
+    <article>      
+      <h1>Paginas relacionadas</h1>
+      
+      <div class="row">
+        <div class="card">
+          <div class="card-header">
+            <h1>Cairns</h1>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+            </p>
+            
+            <a onclick="setCity('Cairns')" href="detailPage.html" class="btn">Det</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h1>Fraser Island</h1>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+            </p>
+            <a onclick="setCity('FraserIsland')" href="detailPage.html" class="btn">Detalles</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h1>Whitesundays</h1>
+          </div>
+          <div class="card-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+            </p>
+            <a onclick="setCity('Whitesundays')" href="detailPage.html" class="btn">Detalles</a>
+          </div>
+        </div>
+      </div>
+      
+    </article>
+
+    <script>
+      var img = document.createElement("img");
+      imgObj = getImage(img);
+      var div = document.getElementById("detail-page__image");
+      div.appendChild(img)
+    </script>
+
+    <script>      
+      window.onload=getCity();     
+      
+    </script>
   </main>
 
   <footer>
@@ -28,7 +96,7 @@
       <a href="https://www.instagram.com/mirabaix/"><img src="../img/instagram.png" alt="Instagram"></img></a>      
     </div>
     <p>
-      Copyright COUNTRYVAN © 2022
+      COUNTRYVAN © 2022
     </p> 
   </footer>
 

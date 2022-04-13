@@ -7,10 +7,11 @@
     <meta name="description" content="Este es un trabajo de Miriam Abella para la UOC">   
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css" />
+    <script type="text/javascript" src="../app.js"></script>
   </head>
   <body>
     <header>
-      <h2 class="header__title"><a href="../index.html">MICAR COUNTRY</a></h2>
+      <h2 class="header__title"><a href="../index.html">MICAR COUNTRYVAN</a></h2>
       <nav>
           <ul class="header__nav">
               <li><a class="header__nav-link" href="aboutUs.html">ABOUT US</a></li>
@@ -19,8 +20,33 @@
           </ul>
       </nav>       
     </header>
-    <main>
-      
+    <main class="categories">
+      <h1> Australia </h1>
+      <h2> Queensland </h2>
+      <ul>
+        <li> Gold Coast</li>
+        <li> Brisbane </li>
+        <li> Sunshine Coast </li>
+        <li> <a class="categories__links" onclick="setCity('FraserIsland')" href="detailPage.html"> Fraser Island </a></li>
+        <li> <a class="categories__links" onclick="setCity('Whitesundays')" href="detailPage.html"> Whitesunday Islands </a></li>
+        <li> <a class="categories__links" onclick="setCity('Cairns')" href="detailPage.html" > Cairns </a></li>
+      </ul>
+
+      <h2> Australian Outback </h2>
+      <ul>        
+        <li> Tennant Creek </li>
+        <li> Uluru</li>
+        <li> Alice Springs </li>
+        <li> Coober Pedy </li>
+      </ul>
+
+      <h2> New South Wales </h2>
+      <ul>
+        <li> Melbourne</li>
+        <li> Bombala </li>
+        <li> Kangaroo Valley </li>
+        <li> Sydney </li>
+      </ul>
     </main>
 
     <footer>
@@ -28,7 +54,7 @@
         <a href="https://www.instagram.com/mirabaix/"><img src="../img/instagram.png" alt="Instagram"></img></a>      
       </div>
       <p>
-        Copyright COUNTRYVAN © 2022
+        COUNTRYVAN © 2022
       </p> 
 
     </footer>

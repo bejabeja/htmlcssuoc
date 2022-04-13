@@ -7,11 +7,13 @@
     <meta name="description" content="Este es un trabajo de Miriam Abella para la UOC">   
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.css" />
-    <script type="module" src="app.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../node_modules/countdowntimer/dist/js/jQuery.countdownTimer.js"></script>
+    <link rel="stylesheet" type="text/css" href="../node_modules/countdowntimer/dist/css/jQuery.countdownTimer.css" />
   </head>
   <body>
     <header>
-      <h2 class="header__title"><a href="index.html">MICAR COUNTRY</a></h2>
+      <h2 class="header__title"><a href="index.html">MICAR COUNTRYVAN</a></h2>
       <nav>
           <ul class="header__nav">
               <li><a class="header__nav-link" href="html/aboutUs.html">ABOUT US</a></li>
@@ -19,12 +21,21 @@
               <li><a class="header__nav-link"  href="html/links.html">LINKS</a></li>
           </ul>
       </nav>       
-  </header>
+    </header>
   <main>
+    
     <img src="img/homeMainImg.jpg" class="img-section"></img>
     <div class="home__welcome">
       <h1>Welcome to our life</h1>
       <h2>Las aventuras de MiCar</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    </div>
+    
+    <div class="home__welcome">
+      <h1>Next adventure</h1>
+      <div class="home__countdowntimer">
+        <div id="countdowntimer"><span id="future_date"></span></div> 
+      </div>           
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
     </div>
   </main>
@@ -34,10 +45,20 @@
       <a href="https://www.instagram.com/mirabaix/"><img src="img/instagram.png" alt="Instagram"></img></a>      
     </div>
     <p>
-      Copyright COUNTRYVAN © 2022
+      MICAR © 2022
     </p> 
 
   </footer>
-
+  
+  <script type="text/javascript">
+    $(function(){
+      $("#future_date").countdowntimer({
+        dateAndTime : "2022/07/20 00:00:00",
+        size : "lg",
+        labelsFormat : true,
+        displayFormat : "DHMS"
+      });
+    });
+</script>
   </body>
 </html>
