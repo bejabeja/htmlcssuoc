@@ -1,5 +1,3 @@
-const name = "world2";
-let citySet = '';
 function getDataCairns(){
     document.getElementById("detail-page__km").innerHTML = "1800 km";
     document.getElementById("detail-page__time-on-road").innerHTML = "20 h";
