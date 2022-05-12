@@ -13,10 +13,14 @@ header {
   background-color: #5dabd5;
   padding: 1em;
 }
- 
-.header__title, .header__nav {
-  width: 70%;
-  margin: 0 auto;
+
+.header-div{
+  display: inline-flex;
+}
+
+
+.header__logo{
+ width: 200px;
 }
  
 .header__title > a{
@@ -58,7 +62,6 @@ footer {
  
 .footer__social > a > img {
   width: 25px;
-  margin-bottom: 1em;
 }
  
 .footer__social > a > img:hover {
@@ -67,7 +70,26 @@ footer {
  
 .footer__social {
   color: #b4d8eb;
+  margin: 1em;
 }
+
+.footer-nav {
+  display: inline-flex;
+  list-style-type: none;
+margin-bottom: 2px;
+}
+ 
+.footer-nav-link {
+  font-weight: 600;
+  color: #194761;
+  text-decoration: none;
+  margin-inline-end: 2em;
+}
+ 
+.footer-nav-link:hover {
+  color: #b4d8eb;
+}
+
  
 p {
   line-height: 1.5rem;
@@ -75,6 +97,15 @@ p {
  
 @media only screen and (max-width: 700px) {
  
+  .header-div{
+    display: unset;
+  }
+
+  .header__logo {
+    width: 70%;
+    margin: auto;
+  }
+
   .header > h2 {
     text-align: center;
     margin: unset;
@@ -145,7 +176,16 @@ h2 {
 #future_date  > span > * {
   border-right: unset;
 }
+
+.map-clipped{  
+  animation: mapclip 2s infinite;
+  width: 30%;
+}
  
+@keyframes mapclip {
+  0% {
+    clip-path: polygon(14% 34%, 15% 22%, 22% 10%, 35% 5%, 56% 5%, 71% 10%, 82% 27%, 84% 45%, 75% 59%, 63% 65%, 51% 72%, 51% 88%, 50% 100%, 33% 100%, 33% 87%, 33% 73%, 35% 61%, 48% 52%, 61% 48%, 69% 35%, 63% 23%, 44% 20%, 31% 26%, 29% 34%);  }
+}
 @media screen and (max-width:700px){
   .img-section {
     object-fit: cover;
@@ -162,6 +202,9 @@ h2 {
   h2 {
     font-size: 5vw;
     text-align: center;
+  }
+  .map-clipped{  
+    width: 70%;
   }
 }
  
@@ -193,6 +236,23 @@ h2 {
 .about-us__image{
  width: 100%;
 }
+
+#carvan-svg{
+  width: 30%;
+  margin-top: 10rem;
+  
+}
+
+.animation{
+  position: relative;
+  animation: carvansvg 8s infinite; 
+  animation-timing-function: linear;
+}
+
+@keyframes carvansvg {
+  from {left: 00px}
+  to {left: 200px;}
+}
  
  
 @media screen and (max-width: 700px) {  
@@ -204,6 +264,23 @@ h2 {
   }
   .about-us__image-right{
     width: 100%;
+  }
+
+  #carvan-svg{
+    width: 50%;
+    margin-top: 3rem;
+    
+  }
+  
+  .animation{
+    position: relative;
+    animation: carvansvg 3s infinite; 
+    animation-timing-function: linear;
+  }
+  
+  @keyframes carvansvg {
+    from {left: 0px}
+    to {left: 50px;}
   }
 }
  
@@ -236,6 +313,17 @@ h2 {
   color: #1f5b7b;
 }
  
+.categories__main-image {
+  width: 30%;
+  margin: 1em 0;
+}
+
+@media screen and (max-width: 700px) {
+ 
+  .categories__main-image {
+    width: 100%;
+  }
+}
  
  
 /* DETAIL PAGE*/
@@ -246,7 +334,7 @@ h2 {
   margin-bottom: 2rem;
 }
  
-.detail-page__image > img {
+.detail-page__image > picture > img {
   width: 50%;
 }
  
@@ -311,7 +399,7 @@ h2 {
  
 @media screen and (max-width: 700px) {
  
-  .detail-page__image > img {
+  .detail-page__image > picture > img{
     width: 100%;
   }
  

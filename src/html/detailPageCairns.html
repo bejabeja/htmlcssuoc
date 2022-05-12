@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8"/>
+    <title>CountryVanMiCar</title>
+    <meta name="author" content="Miriam Abella">
+    <meta name="description" content="Este es un trabajo de Miriam Abella para la UOC">   
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script type="text/javascript" src="../app.js"></script>  
+    
+  </head>
+  <body>
+    <header>
+      <div class="header-div">
+        <div  class='header__logo'>
+          <img src="../img/logo-svg1.svg" alt="Logo de la web">        
+        </div>
+        <div>
+          <h2 class="header__title"><a href="../index.html">MICAR COUNTRYVAN</a></h2>
+          <nav>
+            <ul class="header__nav">
+                <li><a class="header__nav-link" href="aboutUs.html">ABOUT US</a></li>
+                <li><a class="header__nav-link" href="categories.html">CATEGORIES</a></li>
+                <li><a class="header__nav-link"  href="links.html">LINKS</a></li>
+            </ul>
+          </nav>  
+        </div>        
+      </div>    
+  </header>
+  <main class="detail-page">
+
+    <article>
+      <h3> Km recorridos: </h3>
+      <p id="detail-page__km">1800 km</p>
+      <h3> Tiempo en carretera: </h3>
+      <p id="detail-page__time-on-road">20 h</p>
+    </article>
+
+    <article>
+      <h1 id="detail-page__city-title">CAIRNS</h1>
+      <div class="detail-page__image" id="detail-page__image">
+        <picture>
+            <source media="(max-width: 700px)" srcset="../img/cairns-max-700.jpg">
+            <source media="(min-width: 701px)" srcset="../img/cairns-min-700.jpg">
+            <img src="../img/whitesundays-min-700.jpg" alt="La playa de Cairns">
+        </picture>
+      </div>
+      <p id="detail-page__city-description">La ciudad recibe su nombre de William Wellington Cairns, antiguo gobernador de Queensland y fundador de la ciudad. Se formó para servir a los mineros que iban en dirección a la mina de oro del río Hodgkinson, pero experimentó un retroceso en su desarrollo por el descubrimiento de una ruta más fácil por Port Douglas.</p> <p> <br> Más tarde se convirtió en un puerto importante para la exportación de caña de azúcar, oro, metales, minerales y productos agrícolas de los alrededores y las zonas costeras de la región de la meseta Atherton.</p>
+    </article>
+       
+    <article class="main-body__section">
+        <h1 id="detail-page__city-title">Localizacion</h1>
+        <div class="main-body__section-block">
+          <div class="main-body__section-block-text">
+            <p>Es una ciudad ubicada en el noreste de Australia, en el estado de Queensland.
+            </p>
+            <p>
+              Está situada a 1700 km de Brisbane y a unos 2420 km de Sídney en carretera. Tiene una población de 122 731 habitantes según el censo realizado en 2006.
+            </p>
+            <p>
+              Cairns es un destino muy popular para los turistas extranjeros por su clima tropical y por su proximidad a numerosas atracciones.
+              La Gran Barrera de Coral es una de ellas y está a menos de una hora en barco.
+            </p>    
+          </div> 
+          <img class="about-us__image" srcset="../img/cairns-map-500v.png 500w, ../img/cairns-map-1200v.png 1200w" 
+          sizes="(max-width:700px) 350px, (min-width:701px) 800px"
+          src="../img/cairns-map-1200v.png" alt="Mapa localizando Cairns">   
+        </div>  
+    </article>
+
+    <article class="main-body__section">
+      <h1 id="detail-page__city-title">Actividades</h1>
+      <div class="main-body__section-block">
+        <div class="main-body__section-block-text">
+          <p>Que mejor que ver una ciudad australiana desde el cielo?
+          </p>
+          <p>
+            Una vez allí no dudamos cuando tuvimos la posibilidad de tirarnos en paracaídas, una experiencia inolvidable que repetiríamos una y mil veces.
+          </p>
+      
+        </div> 
+        <img class="about-us__image" srcset="../img/cairns-skydive-400v.jpg, ../img/cairns-skydive-800v.jpg 1x, ../img/cairns-skydive-1200v.jpg 2x" 
+        src="../img/cairns-skydive-1200v.jpg" alt="Cairns desde el cielo">   
+      </div>  
+  </article>
+      
+    <article>      
+      <h1>LINKS RELACIONADOS</h1>
+      
+      <div class="row">
+        <div class="card">
+          <div class="card-header">
+            <h1>Cairns</h1>
+          </div>
+          <div class="card-body">
+            <p>
+              Situada en la costa este de la Península del Cabo York en una franja costera entre el mar de Coral y la Gran Cordillera Divisoria
+            </p>
+            
+            <a onclick="setCity('Cairns')" href="detailPageCairns.html" class="btn">Detalles</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h1>Fraser Island</h1>
+          </div>
+          <div class="card-body">
+            <p>
+              La isla de arena más grande del mundo con 1630 km². Forma parte del Parque nacional Great Sandy. 
+            </p>
+            <a onclick="setCity('FraserIsland')" href="detailPageFraser.html" class="btn">Detalles</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h1>Whitesundays</h1>
+          </div>
+          <div class="card-body">
+            <p>
+              70 islas ubicadas en la Gran Barrera de Coral. Se encuentran todas ubicadas al este del continente
+            </p>
+            <a onclick="setCity('Whitesundays')" href="detailPageWhite.html" class="btn">Detalles</a>
+          </div>
+        </div>
+      </div>
+      
+    </article>
+
+   
+  </main>
+
+    
+  <footer>
+  
+    <ul class="footer-nav">
+      <li><a class="footer-nav-link" href="aboutUs.html">ABOUT US</a></li>
+      <li><a class="footer-nav-link" href="categories.html">CATEGORIES</a></li>
+      <li><a class="footer-nav-link" href="links.html">LINKS</a></li>
+    </ul>
+     
+    <div class="footer__social">
+      <a href="https://www.instagram.com/mirabaix/"><img src="../img/instagram.png" alt="Instagram"></a>      
+    </div>
+    <p>
+      MICAR © 2022
+    </p> 
+
+  </footer>
+
+  </body>
+</html>

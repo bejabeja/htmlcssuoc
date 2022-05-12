@@ -11,14 +11,22 @@
   </head>
   <body>
     <header>
-      <h2 class="header__title"><a href="../index.html">MICAR COUNTRYVAN</a></h2>
-      <nav>
-          <ul class="header__nav">
-              <li><a class="header__nav-link" href="aboutUs.html">ABOUT US</a></li>
-              <li><a class="header__nav-link header__nav-link-selected" href="categories.html">CATEGORIES</a></li>
-              <li><a class="header__nav-link"  href="links.html">LINKS</a></li>
-          </ul>
-      </nav>       
+      <div class="header-div">
+        <div  class='header__logo'>
+          <img src="../img/logo-svg1.svg" alt="Logo de la web">
+        
+        </div>
+        <div>
+          <h2 class="header__title"><a href="../index.html">MICAR COUNTRYVAN</a></h2>
+          <nav>
+              <ul class="header__nav">
+                  <li><a class="header__nav-link" href="aboutUs.html">ABOUT US</a></li>
+                  <li><a class="header__nav-link  header__nav-link-selected" href="categories.html">CATEGORIES</a></li>
+                  <li><a class="header__nav-link"  href="links.html">LINKS</a></li>
+              </ul>
+          </nav>  
+        </div>        
+      </div>
     </header>
     <main class="categories">
       <h1> Australia </h1>
@@ -27,9 +35,24 @@
         <li> Gold Coast</li>
         <li> Brisbane </li>
         <li> Sunshine Coast </li>
-        <li> <a class="categories__links" onclick="setCity('FraserIsland')" href="detailPage.html"> Fraser Island </a></li>
-        <li> <a class="categories__links" onclick="setCity('Whitesundays')" href="detailPage.html"> Whitesunday Islands </a></li>
-        <li> <a class="categories__links" onclick="setCity('Cairns')" href="detailPage.html" > Cairns </a></li>
+        <li> <a class="categories__links" onclick="setCity('FraserIsland')" href="detailPageFraser.html"> 
+          <p>Fraser Island</p>
+          <img class="categories__main-image" srcset="../img/dingo-max-700.jpg 1.5x, ../img/dingo.jpg 2x" 
+          src="../img/dingo.jpg" alt="Dingoo en una playa de Fraser Island">
+        </a></li>
+        
+        <li> <a class="categories__links" onclick="setCity('Whitesundays')" href="detailPageWhite.html">
+          <p> Whitesunday Islands </p>
+          <img class="categories__main-image" srcset="../img/whitesundays-max-700.jpg 1.5x, ../img/whitesundays-min-700.jpg 2x" 
+          src="../img/whitesundays-min-700.jpg" alt="La playa de Whitesundays">
+        </a></li>
+        
+        <li> <a class="categories__links" onclick="setCity('Cairns')" href="detailPageCairns.html" > 
+          <p>Cairns</p>
+          <img class="categories__main-image" srcset="../img/cairns-max-700.jpg 1.5x, ../img/cairns-min-700.jpg 2x" 
+          src="../img/cairns-min-700.jpg" alt="La playa de Cairns">
+        </a></li>
+        
       </ul>
 
       <h2> Australian Outback </h2>
@@ -49,14 +72,22 @@
       </ul>
     </main>
 
-    <footer>
-      <div class="footer__social">
-        <a href="https://www.instagram.com/mirabaix/"><img src="../img/instagram.png" alt="Instagram"></a>      
-      </div>
-      <p>
-        COUNTRYVAN © 2022
-      </p> 
+     
+  <footer>
+  
+    <ul class="footer-nav">
+      <li><a class="footer-nav-link" href="aboutUs.html">ABOUT US</a></li>
+      <li><a class="footer-nav-link" href="categories.html">CATEGORIES</a></li>
+      <li><a class="footer-nav-link" href="links.html">LINKS</a></li>
+    </ul>
+     
+    <div class="footer__social">
+      <a href="https://www.instagram.com/mirabaix/"><img src="../img/instagram.png" alt="Instagram"></a>      
+    </div>
+    <p>
+      MICAR © 2022
+    </p> 
 
-    </footer>
+  </footer>
   </body>
 </html>
