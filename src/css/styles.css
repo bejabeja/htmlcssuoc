@@ -114,7 +114,7 @@ p {
 
   .header__logo > img{
     width: 200px;
-    height: auto;
+    height: 100px;
   }
 
   .header > h2 {
