@@ -31,7 +31,11 @@
     </header>
   <main>
     
-    <img loading="lazy" class="img-section" src="img/homeMainImg.webp" alt="Miriam en una biciceta">   
+    <picture>
+      <source media="(max-width: 700px)" srcset="img/homeMainImg-min.jpg">
+      <source media="(min-width: 701px)" srcset="img/homeMainImg.jpg">
+      <img loading="lazy" class="img-section" src="img/homeMainImg.jpg" alt="Miriam en una biciceta">
+    </picture>
     
     <div class="home__welcome">
       <h1>Welcome to our life</h1>
